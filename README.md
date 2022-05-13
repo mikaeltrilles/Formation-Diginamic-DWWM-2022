@@ -3,8 +3,8 @@
 
 PROJETS
 -
-[Projet N°1 ](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/Projet01-HTML-CSS)  HTML - CSS Prise en main réalisation d'un site vitrine société factice SUN POWER.
+[Projet N°1 ](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/Projet01-HTML-CSS)  HTML - CSS Prise en main réalisation perso d'un site vitrine société factice SUN POWER.
 
-[Projet N°2](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/Projet02-Bootstrap) BOOTSTRAP Prise en main réalisation d'un site factice pour une banque Web et AppliMobile.
+[Projet N°2](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/Projet02-Bootstrap) BOOTSTRAP Prise en main réalisation perso d'un site factice pour une banque Web et AppliMobile.
 
-[Projet N°3 ](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/Projet03-PHP-MySQL)  PHP - MySQL  Réalisation fonctionnelle d'un tableau Kanban
+[Projet N°3 ](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/Projet03-PHP-MySQL)  PHP - MySQL  Réalisation en équipe fonctionnelle d'un tableau Kanban
