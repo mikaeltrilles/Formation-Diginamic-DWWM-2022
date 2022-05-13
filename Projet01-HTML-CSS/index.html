@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr" country="FR" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Société SunPower spécialisé dans la création et l'installation d'ombrière solaire pour particulier, société, collectivité et syndic de copropriété. ">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/map.css">
+  <link rel="stylesheet" href="./css/nos-realisations.css">
+<link rel="stylesheet" href="./css/pannel.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/0ec147f743.js" crossorigin="anonymous"></script>
+  <title>SUN POWER</title>
+</head>
+
+<body>
+  <header>
+    <!-- * Menu burger -->
+    <div class="entete-mobile">
+      <div class="toggle_logo">
+        <a href="index.html"><img class="logo" src="./img/logo-horizontal.webp" style="width: 150px; height: 50px;" alt="logo sunpower"></a>
+      </div>
+      <div class="toggle_btn">
+        <span></span>
+      </div>
+    </div>
+    <!-- * Menu navigation -->
+    <nav role="verti menu nav" class="verti menu nav">
+      <a href="index.html"><img class="logo" src="./img/logo-site.webp" style="width: 100px; "
+          alt="Logo de la Société Sun Power"></a>
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <a href="./qui-sommes-nous.html">Qui sommes nous</a>
+      <a href="./nos-ombrieres.html">Nos Ombrières</a>
+      <a href="./nos-activites.html">Nos Activités</a>
+      <a href="./nos-realisations.html">Nos Réalisations</a>
+      <a href="./nos-partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html"><button class="btnContact">Nous contacter</button></a>
+    </nav>
+    <nav role="menu de navigation horizontal" class="hori navxxl">
+      <a href="index.html"><img class="logoxxl" src="./img/logo-site.webp" width="100px" alt="Logo du site"></a>
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <a href="./qui-sommes-nous.html">Qui sommes nous</a>
+      <a href="./nos-ombrieres.html">Nos Ombrières</a>
+      <a href="./nos-activites.html">Nos Activités</a>
+      <a href="./nos-realisations.html">Nos Réalisations</a>
+      <a href="./nos-partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html"><button class="btnContact">Nous contacter</button></a>
+    </nav>
+  </header>
+    <div id="volet">
+      <div id="volet_clos">
+          <button id="société">société</button>
+          <button id="syndic">syndic</button>
+          <button id="particulier">particulier</button>
+          <div id="mod">
+              <form action="">
+                  <label for="">Raison sociale<br><input type="text"></label><br>
+                  <label for="">Nom du responsable<br><input type="text"></label><br>
+                  <label for="">Prénom du responsable<br><input type="text"></label><br>
+                  <label for="">Qualité<br><input type="text"></label><br>
+                  <label for="">adresse mail<br><input type="email"></label><br>
+                  <label for="">n° de téléphone<br><input type="text"></label><br>
+                  <label for="">Description du projet<br><input type="textarea"></label><br>
+                  <label for="">Pièce jointe (pdf)<br><input type="file" accept=".pdf"></label><br>
+                  <br><input type="submit">
+              </form>
+          </div>
+          <a href="#volet" class="ouvrir">Nous Contacter</a>
+        <a href="#volet_clos" class="fermer">Nous Contacter</a>
+      </div>
+  </div>
+  
+  <!-- * Début du site -->
+  <main>
+    <!-- * Titre de la page -->
+    <div class="intro">
+      <h1><span class="jaune">SUN</span> <span class="bleu">POWER</span></h1>
+      <h2 class="slogan">Avec "SUN POWER" démarré votre journée de bonne Humeur</h2>
+      <img src="./img/Ombriere-de-parking-panneaux-photovoltaiques.webp" style="width: 100%" alt="photo ombrière solaire">
+    </div>
+    <!-- * Mettre contenu ici -->
+    <section>
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img src='./img/reunion.webp' alt="photo reunion" />
+        </div>
+        <div class="info">
+          <h2>Une équipe à votre écoute</h2>
+          <p> Notre équipe a pour rôle de vous aider à monter vos projets et vous conseiller au mieux pour l'implantation de vos ombrières</p>
+          
+          
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/homePannel.webp" alt="photo panneau solaire">
+        </div>
+        <div class="info">
+          <h2>En route vers une transition</h2>
+          <p> Le solaire est notre futur, et chez SunPower, nous le savons bien. C'est pour cela que notre ambition est de rendre nos usagers entièrement autonomes en énergie </p>
+          
+          
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="./img/inge.webp" alt="photo ingenieur">
+        </div>
+        <div class="info">
+          <h2>Un développement constant</h2>
+          <p>Notre équipe de recherche et développement travaille à rendre nos produits toujours plus efficaces, responsable de l'environnement tout en gardant un coût abordable</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+<section>
+  <div id="map">
+    <div class="leaflet-controle-container legend">
+      <div class="legendItem"><img src="https://img.icons8.com/ios-filled/40/094F71/marker.png"
+          alt="marqueur bleu societe et collectivité">
+        <p>société et collectivité</p>
+      </div>
+      <div class="legendItem"><img src="https://img.icons8.com/ios-filled/40/F9B105/marker.png"
+          alt="marqueur jaune particulier et syndic de copropriété">
+        <p>particulier et syndicat de propriété</p>
+      </div>
+      <div class="legendItem"><img src="https://www.datavis.fr/maps/leaflet-control/map-icons/automotive.png"
+          alt="marqueur de borne rechargeable">
+        <p>Borne de recharge</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="findesite">
+    <div class="grid-container">
+      <div class="grid-item1">
+        <img src="./img/logo-site.webp" style="width: 200px; height: 200px;" alt="Logo de la Société Sun Power">
+        <ul class="social-links">
+          <li><a class="jaune" href="https://twitter.com/home" alt="lien vers twitter"><span class="fa fa-twitter"></span></a></li>
+          <li><a class="jaune" href="https://www.facebook.com/" alt="lien vers facebook"><span class="fa fa-facebook"></span></a></li>
+          <li><a class="jaune" href="https://www.linkedin.com/" alt="lien vers linkedin"><span class="fa fa-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="grid-item2">
+        <div class="footer">
+          <h3 class="blanc">NAVIGATION</h3>
+        </div>
+        <div><a class="jaune" href="index.html" alt="Acceuil">Accueil</a></div>
+        <div><a class="jaune" href="./qui-sommes-nous.html" alt="Qui sommes nous">Qui sommes nous</a></div>
+        <div><a class="jaune" href="./nos-ombrieres.html" alt="Nos Ombrières">Nos Ombrières</a></div>
+        <div><a class="jaune" href="./nos-activites.html" alt="Nos Activités">Nos Activités</a></div>
+        <div><a class="jaune" href="./nos-realisations.html" alt="Nos Réalisations">Nos Réalisations</a></div>
+      </div>
+      <div class="grid-item3">
+        <div class="footer">
+          <h3 class="blanc">PARTENAIRES</h3>
+        </div>
+        <div class="sponsor">
+          <a href="https://www.laregion.fr/" alt="lien du site de la région Occitanie"><img src="./img/partenaire/logooccitanie.webp" style="width:90px;" alt="Logo de la région Occitanie"></a>
+          <a href="https://herault.fr/" alt="lien du département de l'hérault"><img src="./img/partenaire/logoherault.webp" style="width:90px;" alt="Logo du Département de l'Hérault"></a>
+          <a href="https://www.montpellier3m.fr/" alt="lien du site de la metropole de montpellier"><img src="./img/partenaire/logomontpellier.webp" style="width:90px;" alt="Logo de la Ville de Montpellier"></a>
+          <a href="https://www.bpifrance.fr/" alt="lien du site de BPI France"><img src="./img/partenaire/logobpi.webp" style="width:90px;" alt="Logo de BPI France"></a>
+          <a href="https://www.toulouse.fr/" alt="lien du site de la ville de Toulouse"><img src="./img/partenaire/logotoulouse.webp" style="width:90px;" alt="logo ville de Toulouse"></a>
+          <a href="https://librairie.ademe.fr/recherche-et-innovation/3121-zen-e-drive.html" alt="Lien de la librairie Ademe ZEN E-DRIVE"><img src="./img/partenaire/lolozen.webp" style="width:90px;" alt="logo Zen E-DRIVE"></a>
+          <a href="https://www.ines-solaire.org/" alt="lien du site de l'institut INES"><img src="./img/partenaire/logoines.webp" style="width:90px;" alt="Logo de l'Institut Ines"></a>
+          <a href="https://www.cea.fr/" alt="lien du site du CEA"><img src="./img/partenaire/logocea.webp" alt="logo CEA" style="width: 90px;"></a>
+          <a href="https://www.ademe.fr/" alt="lien du site de l'ademe"><img src="./img/partenaire/logoademe (1).webp" alt="logo Ademe" style="width: 90px;"></a>
+        </div>
+      </div>
+      <div class="grid-item4">
+        <div class="footer">
+          <h3 class="blanc">CONTACT</h3>
+          <p class="jaune"><i class="fa-solid fa-location-dot"></i> 2, Rue de l'Innovation</p>
+          <p class="jaune">38000 Grenoble</p>
+          <p class="jaune"><i class="fas fa-phone-alt"></i> +33 7 28 65 98 87</p>
+          <p class="jaune"><i class="fas fa-envelope"></i> contact@sun-power.fr</p>
+        </div>
+      </div>
+    </div>
+    <div class="mentions">
+      <h4>© Sun Power - Tous Droits Réservés – <a href="./mention-legale.html" alt="mention legale">Mentions légales</a> – <a href="./politique-de-confidentialite.html" alt="page de politique de confidentialite">Politique de confidentialité</a></h4>
+    </div>
+  </footer>
+
+</body>
+<!-- * Script pour le menu burger -->
+<script src="./js/buttonBurger.js"></script>
+<!-- * Script pour la map Mika -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="./js/script.js"></script>
+<script src="./js/map.js"></script>
+<script src="./js/formulaire.js"></script>
+</html>

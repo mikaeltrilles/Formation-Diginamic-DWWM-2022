@@ -1,0 +1,150 @@
+section {
+  padding: 3rem 8%;
+}
+
+/* #map {
+  height: 500px;
+  width: 20% 60% 20%;
+} */
+
+h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 2.2rem;
+  color: #094f71;
+  margin-left: 15px;
+}
+
+/* .leaflet-popup-content {
+  width: 250px !important;
+} */
+
+/* .leaflet-popup-content p {
+  color: #094f71;
+  margin: 0;
+} */
+
+.leaflet-popup-content h1 {
+  color: #f9b105;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.leaflet-popup-content img {
+  width: 250px;
+}
+
+.info.leaflet-control {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.leaflet-controle-container {
+  z-index: 1001;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: 50px;
+}
+
+p {
+  color: black;
+  margin-left: 20px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+}
+
+.legendItem {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+
+/* section {
+  padding: 3rem 8%;
+} */
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  margin-top: 20px;
+}
+
+.box-container .box {
+  background-color: #f9b105;
+}
+
+.box-container .box .image {
+  height: 30rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-container .box .info h3 {
+  letter-spacing: 1.2px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: rgb(70, 64, 64);
+}
+
+.box-container .box .info p {
+  text-align: justify;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.box-container .box .info h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: rgb(70, 64, 64);
+}
+
+.box-container .box .info ul {
+  text-align: left;
+  list-style: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding: 1.5rem;
+}
+
+/** Mobile first */
+@media screen and (max-width:768px) {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 3rem;
+  }
+}

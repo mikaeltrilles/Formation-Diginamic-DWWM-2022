@@ -1,0 +1,75 @@
+section {
+    padding: 3rem 8%;
+  }
+  #map {
+    margin-top: 50px;
+    height: 500px;
+    width: 20% 60% 20%;
+  }
+  
+  h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+    color: #094f71;
+    margin-left: 15px;
+  }
+  
+  .leaflet-popup-content {
+    width: 250px !important;
+  }
+  .leaflet-popup-content p {
+    color: #094f71;
+    margin: 0;
+  }
+  .leaflet-popup-content h1 {
+    color: #f9b105;
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  .leaflet-popup-content img {
+    width: 250px;
+  }
+  
+  .info.leaflet-control {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .info h4 {
+    margin: 0 0 5px;
+    color: #777;
+  }
+  .leaflet-controle-container {
+    z-index: 1001;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: 50px;
+  }
+  
+  p {
+    color: black;
+    margin-left: 20px;
+  }
+  .legend {
+    display: flex;
+    flex-direction: column;
+  }
+  .legendItem {
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+  }

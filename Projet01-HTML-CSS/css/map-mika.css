@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  /* bottom: 10px; */
+  width: 100%;
+  height: 30vh;
+  position: none;
+}
+
+.mapfooter {}

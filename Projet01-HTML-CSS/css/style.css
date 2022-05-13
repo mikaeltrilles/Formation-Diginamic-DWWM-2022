@@ -1,0 +1,304 @@
+@font-face {
+  font-family: BonvenoCF;
+  src: url("./Fonts/AquawaxBlack.ttf");
+  font-weight: bold;
+}
+
+/** margin padding du Body et html */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding: 3rem 8%;
+}
+.intro {
+  text-align: center;
+}
+
+/** lien  */
+
+
+/** Mise en place de la navbar horizontale en Flex en
+ ** ligne la nav prend la largeur de l'ecran */
+.hori {
+  display: flex;
+  flex-direction: row;
+  background-color: #094F71;
+  justify-content: space-around;
+  width: 100vw;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/** Eléments de la barre de navigation
+ ** Retrait des styles de liste
+ ** Retrait du soulignement des liens
+ ** Texte centré */
+.hori>a {
+  list-style-type: none;
+  margin-right: 1rem;
+  margin: 0 10px;
+  text-align: center;
+  /** Couleur et police des liens */
+  color: #F9B105;
+  text-decoration: none;
+  font-size: large;
+}
+
+/** Couleur de la police et du fond
+ ** au survol des liens */
+.hori a:hover {
+  color: #fffbf0;
+  text-shadow: #fffbf0 0 0 10px;
+}
+
+/** Bouton contact de la barre de navigation */
+.btnContact {
+  background-color: #F9B105;
+  color: #094F71;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: #fffbf0 0px 0px 5px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+/** logo be la Nav ecran xxl */
+.logoxxl {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  position: relative;
+  top: 22px;
+}
+
+/** Footer du site */
+footer {
+  background-color: #094F71;
+
+}
+
+/** Padding sur les patenaire dans le footer */
+.sponsor img {
+  padding: 4px;
+  object-fit: contain;
+}
+.social-links {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+.social-links a {
+  margin-left: 3rem;
+}
+
+.grid-item2 a {
+  text-decoration-line: none;
+}
+
+.social-links a:hover,
+.grid-item2 a:hover {
+  color: #fffbf0;
+}
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+
+/** Section navigation footer */
+.footer h3 {
+  border-left: #F9B105 solid 5px;
+  padding-left: 15px;
+}
+
+.grid-item1 img {
+  margin-left: 3rem;
+
+  margin-top: 10px;
+}
+
+.grid-item2 div {
+  margin-top: 10px;
+}
+
+.blanc {
+  color: #fffbf0;
+  font-size: 2rem;
+}
+
+.bleu {
+  color: #094F71;
+}
+
+.jaune {
+  color: #F9B105;
+}
+
+.mentions {
+
+  color: #fffbf0;
+  display: grid;
+  grid-column: 1/6;
+  text-align: center;
+}
+.mentions a {
+  color: #fffbf0;
+  text-decoration-line: none;
+}
+/** Mobile first */
+@media screen and (max-width:768px) {
+
+  /** NavBar Horizontale masquée en version mobile */
+  .navxxl {
+    display: none;
+  }
+
+  .entete-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+    padding: 5px 0;
+    background-color: #094F71;
+  }
+
+  .toggle_logo {
+    margin-left: 5px;
+  }
+
+  /** Div du Menu Burger affiché en version mobile */
+  .toggle_btn {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    margin-top: 0px;
+    cursor: pointer;
+    
+  }
+
+  /** Ligne centrale du burger*/
+  .toggle_btn span {
+    height: 3px;
+    background-color: #F9B105;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  /** Ligne inférieure du burger*/
+  .toggle_btn span:before {
+    content: "";
+    height: 3px;
+    background-color: #F9B105;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+  }
+
+  /** Ligne supérieure du burger*/
+  .toggle_btn span:after {
+    content: "";
+    height: 3px;
+    background-color: #F9B105;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  /** Volet Vertical Menu Navigation en version mobile */
+  .menu {
+    background-color: #094F71;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+  }
+
+  /** Couleur des lien et position du menu */
+  .menu a {
+    color: #F9B105;
+    text-align: center;
+    padding-top: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: larger;
+  }
+
+  /** Position et taille logo sur volet vertical */
+  .logo {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+  }
+
+  .map {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /** le menu est caché en dehors de l'écran */
+  .nav {
+    margin-left: -40%;
+    transition: 0.3s;
+  }
+
+  /** le menu est affiché sur l'écran */
+
+  .nav_active {
+    margin-left: 0px;
+    transition: 0.3s;
+    z-index: 5000;
+  }
+
+  /** Decalgae des h1 */
+  h1 {
+    font-size: 2rem;
+    /* position: relative;
+    top: 13px; */
+  }
+}
+
+/* affichage tablette */
+@media screen and (max-width:992px) {
+
+  /** Décalage du Footer en mode telephone et tablette */
+  .findesite * {
+    margin-left: 5px;
+  }
+}
+
+/** affichage XXL */
+@media screen and (min-width:769px) {
+
+  /** Je masque la navbar format mobile "nav menu" */
+  .verti {
+    display: none;
+  }
+
+  /** Le menu burger n'est plus afficher */
+  .toggle_logo {
+    display: none;
+  }
+}

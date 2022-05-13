@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr" country="FR" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Société SunPower spécialisé dans la création et l'installation d'ombrière solaire pour particulier, société, collectivité et syndic de copropriété. contactez nous ">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!-- ! Controlez les CSS -->
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/map-mika.css">
+  <!-- ! Tarte aux citrons -->
+  <script src="./tarteaucitron/tarteaucitron.js"></script>
+  <!-- ! Tarte aux citrons -->
+  <!-- ! Controlez les JS -->
+  <script src="https://kit.fontawesome.com/0ec147f743.js" crossorigin="anonymous"></script>
+  <!-- ! Changez le Titre de page -->
+  <title>Nous Contacter | SUN POWER</title>
+</head>
+
+<body>
+  <header>
+    <!-- * Menu burger -->
+    <div class="entete-mobile">
+      <div class="toggle_logo">
+        <a href="index.html"><img class="logo" src="./img/logo-horizontal.webp" alt="logo sunpower" style="width: 150px; height: 50px;"></a>
+      </div>
+      <div class="toggle_btn">
+        <span></span>
+      </div>
+    </div>
+    <!-- * Menu navigation -->
+    <nav role="menu-de-navigation-vertical" class="verti menu nav">
+      <a href="index.html"><img class="logo" src="./img/logo-site.webp" style="width: 100px;"
+          alt="Logo de la Société Sun Power"></a>
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <a href="./qui-sommes-nous.html">Qui sommes nous</a>
+      <a href="./nos-ombrieres.html">Nos Ombrières</a>
+      <a href="./nos-activites.html">Nos Activités</a>
+      <a href="./nos-realisations.html">Nos Réalisations</a>
+      <a href="./nos-partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html"><button class="btnContact">Nous contacter</button></a>
+    </nav>
+    <nav role="menu-de-navigation-horizontal" class="hori navxxl">
+      <a href="index.html"><img class="logoxxl" src="./img/logo-site.webp" width="100px" alt="Logo du site"></a>
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <a href="./qui-sommes-nous.html">Qui sommes nous</a>
+      <a href="./nos-ombrieres.html">Nos Ombrières</a>
+      <a href="./nos-activites.html">Nos Activités</a>
+      <a href="./nos-realisations.html">Nos Réalisations</a>
+      <a href="./nos-partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html"><button class="btnContact">Nous contacter</button></a>
+    </nav>
+  </header>
+  
+  <!-- * Début du site -->
+  <main>
+    <!-- ! Changez le Titre de page -->
+    
+    <!-- * Titre de la page -->
+    <div class="intro">
+      <h1><span class="jaune">Nous</span> <span class="bleu">Contacter</span></h1>
+    </div>
+    <!-- ? Mettre contenu ici -->
+    <section>
+      <div id="map"></div>
+      <form class="formulaire" id="contactForm contact" action="" method="post">
+        <div class="radioButton">
+          <input type="radio" id="typeChoice1" name="typeForm" value="Entreprise ou Collectivité">
+          <label for="typeChoice1">Entreprise ou Collectivité</label>
+          <input type="radio" id="typeChoice2" name="typeForm" value="Syndics de copropriété">
+          <label for="typeChoice2">Syndics de copropriété</label>
+          <input type="radio" id="typeChoice3" name="typeForm" value="Particulier">
+          <label for="typeChoice3">Particulier</label>
+        </div>
+        <div>
+          <label for="raisonSociale">Raison Sociale</label>
+          <input class="input-form" type="text" id="raisonSociale" name="raisonSociale"
+            aria-label="Veuillez saisir votre Raison Sociale" placeholder="Saisissez votre Raison Sociale" required>
+        </div>
+        <div>
+          <label for="nom">Nom du Responsable</label>
+          <input class="input-form" type="text" id="nom" name="nom" aria-label="Veuillez saisir votre nom"
+            placeholder="Saisissez votre nom" required>
+        </div>
+        <div>
+          <label for="prenom">Prénom de Resposable</label>
+          <input class="input-form" type="text" id="prenom" name="prenom" aria-label="Veuillez saisir votre prénom"
+            placeholder="Saisissez votre prénom" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input class="input-form" type="email" id="email" name="email"
+            aria-label="Veuillez saisir votre adresse email" placeholder="Saisissez votre adresse mail" required>
+        </div>
+        <div>
+          <label for="message">Description de votre projet</label>
+          <textarea class="input-form" id="message" name="message"
+            aria-label="Veuillez saisir le détail de votre projet" placeholder="Bonjour, notre projet consiste...."
+            required></textarea>
+        </div>
+        <p>
+          <input class="valider" type="submit" value="Envoyer"></input>
+        </p>
+      </form>
+
+
+      <div class="coordonnees">
+        <div class="item-container">
+          <div class="picto">
+            <img src="./img/icons8-geo.png" alt="Icone illustrant l'adresse de la société">
+          </div>
+          <div class="texte">
+            <p>ADRESSE</p>
+            <p>2, Rue de l'Innovation</p>
+            <p>38000 Grenoble, France</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <div class="picto">
+            <img src="./img/icons8-gmail-90.svg" alt="Icone illustrant l'adresse e-mail de la société">
+          </div>
+          <div class="texte">
+            <p>EMAIL</p>
+            <p>contact@sun-power.fr</p>
+          </div>
+        </div>
+        <div class="item-container">
+          <div class="picto">
+            <img src="./img/icons8-tel.png"
+              alt="Icone illustrant le numéro de téléphone de la société">
+          </div>
+          <div class="texte">
+            <p>TÉLÉPHONE</p>
+            <p>0800 904 070</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="findesite">
+    <div class="grid-container">
+      <div class="grid-item1">
+        <img src="./img/logo-site.webp" style="width: 200px; height: 200px;" alt="Logo de la Société Sun Power">
+        <ul class="social-links">
+          <li><a class="jaune" href="https://twitter.com/home" alt="lien vers twitter"><span class="fa fa-twitter"></span></a></li>
+          <li><a class="jaune" href="https://www.facebook.com/" alt="lien vers facebook"><span class="fa fa-facebook"></span></a></li>
+          <li><a class="jaune" href="https://www.linkedin.com/" alt="lien vers linkedin"><span class="fa fa-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="grid-item2">
+        <div class="footer">
+          <h3 class="blanc">NAVIGATION</h3>
+        </div>
+        <div><a class="jaune" href="index.html" alt="Acceuil">Accueil</a></div>
+        <div><a class="jaune" href="./qui-sommes-nous.html" alt="Qui sommes nous">Qui sommes nous</a></div>
+        <div><a class="jaune" href="./nos-ombrieres.html" alt="Nos Ombrières">Nos Ombrières</a></div>
+        <div><a class="jaune" href="./nos-activites.html" alt="Nos Activités">Nos Activités</a></div>
+        <div><a class="jaune" href="./nos-realisations.html" alt="Nos Réalisations">Nos Réalisations</a></div>
+      </div>
+      <div class="grid-item3">
+        <div class="footer">
+          <h3 class="blanc">PARTENAIRES</h3>
+        </div>
+        <div class="sponsor">
+          <a href="https://www.laregion.fr/" alt="lien du site de la région Occitanie"><img src="./img/partenaire/logooccitanie.webp" style="width:90px;" alt="Logo de la région Occitanie"></a>
+          <a href="https://herault.fr/" alt="lien du département de l'hérault"><img src="./img/partenaire/logoherault.webp" style="width:90px;" alt="Logo du Département de l'Hérault"></a>
+          <a href="https://www.montpellier3m.fr/" alt="lien du site de la metropole de montpellier"><img src="./img/partenaire/logomontpellier.webp" style="width:90px;" alt="Logo de la Ville de Montpellier"></a>
+          <a href="https://www.bpifrance.fr/" alt="lien du site de BPI France"><img src="./img/partenaire/logobpi.webp" style="width:90px;" alt="Logo de BPI France"></a>
+          <a href="https://www.toulouse.fr/" alt="lien du site de la ville de Toulouse"><img src="./img/partenaire/logotoulouse.webp" style="width:90px;" alt="logo ville de Toulouse"></a>
+          <a href="https://librairie.ademe.fr/recherche-et-innovation/3121-zen-e-drive.html" alt="Lien de la librairie Ademe ZEN E-DRIVE"><img src="./img/partenaire/lolozen.webp" style="width:90px;" alt="logo Zen E-DRIVE"></a>
+          <a href="https://www.ines-solaire.org/" alt="lien du site de l'institut INES"><img src="./img/partenaire/logoines.webp" style="width:90px;" alt="Logo de l'Institut Ines"></a>
+          <a href="https://www.cea.fr/" alt="lien du site du CEA"><img src="./img/partenaire/logocea.webp" alt="logo CEA" style="width: 90px;"></a>
+          <a href="https://www.ademe.fr/" alt="lien du site de l'ademe"><img src="./img/partenaire/logoademe (1).webp" alt="logo Ademe" style="width: 90px;"></a>
+        </div>
+      </div>
+      <div class="grid-item4">
+        <div class="footer">
+          <h3 class="blanc">CONTACT</h3>
+          <p class="jaune"><i class="fa-solid fa-location-dot"></i> 2, Rue de l'Innovation</p>
+          <p class="jaune">38000 Grenoble</p>
+          <p class="jaune"><i class="fas fa-phone-alt"></i> +33 7 28 65 98 87</p>
+          <p class="jaune"><i class="fas fa-envelope"></i> contact@sun-power.fr</p>
+        </div>
+      </div>
+    </div>
+    <div class="mentions">
+      <h4>© Sun Power - Tous Droits Réservés – <a href="./mention-legale.html" alt="mention legale">Mentions légales</a> – <a href="./politique-de-confidentialite.html" alt="page de politique de confidentialite">Politique de confidentialité</a></h4>
+    </div>
+  </footer>
+
+
+<!-- * Script pour le menu burger -->
+<script src="./js/buttonBurger.js"></script>
+<!-- * Script pour la map Mika -->
+<script src="./js/map-mika.js"></script>
+</body>
+</html>

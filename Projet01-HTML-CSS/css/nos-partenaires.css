@@ -1,0 +1,39 @@
+section {
+  padding: 3rem 8%;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 4rem;
+}
+
+.box-container .box .image {
+  height: 15rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.info h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  color: #094f71;
+}
+
+.box-container .box .info p {
+  text-align: justify;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}

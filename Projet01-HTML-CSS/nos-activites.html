@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr" country="FR" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Société SunPower spécialisé dans la création et l'installation d'ombrière solaire pour particulier, société, collectivité et syndic de copropriété. Nos activités.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <!-- ! Controlez les CSS -->
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/map.css">
+  <link rel="stylesheet" href="./css/nosactivites.css">
+  <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/pannel.css">
+
+  <!-- ! Controlez les JS -->
+  <script src="https://kit.fontawesome.com/0ec147f743.js" crossorigin="anonymous"></script>
+  <!-- ! Changez le Titre de page -->
+  <title>Nos Activités | SUN POWER</title>
+</head>
+
+<body>
+  <header>
+    <!-- * Menu burger -->
+    <div class="entete-mobile">
+      <div class="toggle_logo">
+        <a href="index.html"><img class="logo" src="./img/logo-horizontal.webp" alt="logo sunpower" style="width: 150px; height: 50px;"></a>
+      </div>
+      <div class="toggle_btn">
+        <span></span>
+      </div>
+    </div>
+    <!-- * Menu navigation -->
+    <nav role="menu-de-navigation-vertical" class="verti menu nav">
+      <a href="index.html"><img class="logo" src="./img/logo-site.webp" style="width: 100px;"
+          alt="Logo de la Société Sun Power"></a>
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <a href="./qui-sommes-nous.html">Qui sommes nous</a>
+      <a href="./nos-ombrieres.html">Nos Ombrières</a>
+      <a href="./nos-activites.html">Nos Activités</a>
+      <a href="./nos-realisations.html">Nos Réalisations</a>
+      <a href="./nos-partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html"><button class="btnContact">Nous contacter</button></a>
+    </nav>
+    <nav role="menu-de-navigation-horizontal" class="hori navxxl">
+      <a href="index.html"><img class="logoxxl" src="./img/logo-site.webp" width="100px" alt="Logo du site"></a>
+      <a href="index.html"><i class="fas fa-home"></i></a>
+      <a href="./qui-sommes-nous.html">Qui sommes nous</a>
+      <a href="./nos-ombrieres.html">Nos Ombrières</a>
+      <a href="./nos-activites.html">Nos Activités</a>
+      <a href="./nos-realisations.html">Nos Réalisations</a>
+      <a href="./nos-partenaires.html">Nos Partenaires</a>
+      <a href="./contact.html"><button class="btnContact">Nous contacter</button></a>
+    </nav>
+  </header>
+  <!-- * Début du site -->
+  <div id="volet">
+    <div id="volet_clos">
+        <button id="société">société</button>
+        <button id="syndic">syndic</button>
+        <button id="particulier">particulier</button>
+        <div id="mod">
+            <form action="">
+                <label for="">Raison sociale<br><input type="text"></label><br>
+                <label for="">Nom du responsable<br><input type="text"></label><br>
+                <label for="">Prénom du responsable<br><input type="text"></label><br>
+                <label for="">Qualité<br><input type="text"></label><br>
+                <label for="">adresse mail<br><input type="email"></label><br>
+                <label for="">n° de téléphone<br><input type="text"></label><br>
+                <label for="">Description du projet<br><input type="textarea"></label><br>
+                <label for="">Pièce jointe (pdf)<br><input type="file" accept=".pdf"></label><br>
+                <br><input type="submit">
+            </form>
+        </div>
+        <a href="#volet" class="ouvrir">Nous Contacter</a>
+        <a href="#volet_clos" class="fermer">Nous Contacter</a>
+    </div>
+</div>
+  <main>
+    <!-- ! Changez le Titre de page -->
+    <!-- * Titre de la page -->
+    <div class="intro">
+      <h1><span class="jaune">Nos</span> <span class="bleu">Activités</span></h1>
+    </div>
+    <!-- ? Mettre contenu ici -->
+    <section>
+      <div class="box-container">
+        <div class="box">
+          <div class="texte">
+            <h2>Recherche et Developpement</h2>
+            <div class="borderJaune">
+              <p>La recherche et le développement constitue l’ADN de la société. Nos produits sont en constante
+                amélioration. En outre, nous participons à différents projets
+                européens qui demeurent confidentiels à ce jour
+              </p>
+            </div>
+            <p>Depuis 2013, le bureau d’études SunPowerconçoit ses ombrières avec différents partenaires. Au fil des
+              différents prototypes, nous avons amélioré les caractéristiques essentielles de ces produits : les
+              fonctionnalités et la simplicité d’installation. Les compétences d’un designer ont permis d’aboutir un
+              style sobre permettant aux panneaux solaires de s’intégrer harmonieusement dans un extérieur. Les
+              ombrières SunPower sont certifiées suivant les EURO CODES pour la résistance au vent. Tous nos produits
+              ont fait l’objet de dépôt de brevet à l’INPI et les modèles sont déposés.
+            </p>
+            <p>La société SunPower est issue de l’association des compétences et de l’expérience de ses associés en
+              solaire photovoltaïque et chaudronnerie industrielle.
+            </p>
+            <p> Forte de cet environnement technique, Concept SunPower conçoit et fabrique des solutions de production
+              d’énergie photovoltaïque sûres, fiables et simples d’installation.
+              Tous nos produits sont conçus et fabriqués dans la région d’Aix-en-Provence..</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./img/reunion.webp" alt="photo reunion">
+          </div>
+        </div>
+        <div class="box">
+          <div class="texte">
+            <h2>Aide aux montages de projet</h2>
+            <div class="borderJaune">
+              <p>Chez SunPower, nous accompagnons les collectivités qui souhaitent implanter nos ombrières sur le territoire.
+              </p>
+            </div>
+            <p>Montage financier: Lors de la conception d’une installation photovoltaïque, la question du financement
+              est fondamentale.
+              On produit aujourd’hui l’électricité photovoltaïque moins chère que le prix du réseau. Mais pour
+              bénéficier du potentiel d’économie, il faut avancer l’investissement nécessaire. La particularité d’un
+              projet photovoltaïque est que la quasi-totalité d’un investissement est réalisée au départ. Chaque année
+              d’exploitation représentera seulement environ 1,5% de l’investissement total.
+            </p>
+            <p>Etude de faisabilité: Elle permet de dimensionner au mieux une installation et d’estimer le coût et la
+              rentabilité de l’installation photovoltaïque et d’apporter ainsi tous les éléments permettant de décider
+              sereinement sur la faisabilité d’un projet amené à durer et à produire de l’énergie pendant a minima 25
+              ans…
+            </p>
+            <p>Mise en conformité avec le PLUI: Le plan local d'urbanisme (PLU), ou le plan local d'urbanisme
+              intercommunal (PLUI)c'est un projet global d'aménagement du territoire de la commune (PLU) ou des communes
+              (PLUI) dans un souci de respect du développement durable dans le cadre du projet d'aménagement et de
+              développement durable (PADD), tout en respectant les politiques d'urbanisme, d'habitat et de déplacements
+              urbains.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="./img/homePannel.webp" alt="ombriere en alu">
+          </div>
+        </div>
+    </section>
+
+
+  </main>
+
+  <footer class="findesite">
+    <div class="grid-container">
+      <div class="grid-item1">
+        <img src="./img/logo-site.webp" style="width: 200px; height: 200px;" alt="Logo de la Société Sun Power">
+        <ul class="social-links">
+          <li><a class="jaune" href="https://twitter.com/home" alt="lien vers twitter"><span class="fa fa-twitter"></span></a></li>
+          <li><a class="jaune" href="https://www.facebook.com/" alt="lien vers facebook"><span class="fa fa-facebook"></span></a></li>
+          <li><a class="jaune" href="https://www.linkedin.com/" alt="lien vers linkedin"><span class="fa fa-linkedin"></span></a></li>
+        </ul>
+      </div>
+      <div class="grid-item2">
+        <div class="footer">
+          <h3 class="blanc">NAVIGATION</h3>
+        </div>
+        <div><a class="jaune" href="index.html" alt="Acceuil">Accueil</a></div>
+        <div><a class="jaune" href="./qui-sommes-nous.html" alt="Qui sommes nous">Qui sommes nous</a></div>
+        <div><a class="jaune" href="./nos-ombrieres.html" alt="Nos Ombrières">Nos Ombrières</a></div>
+        <div><a class="jaune" href="./nos-activites.html" alt="Nos Activités">Nos Activités</a></div>
+        <div><a class="jaune" href="./nos-realisations.html" alt="Nos Réalisations">Nos Réalisations</a></div>
+      </div>
+      <div class="grid-item3">
+        <div class="footer">
+          <h3 class="blanc">PARTENAIRES</h3>
+        </div>
+        <div class="sponsor">
+          <a href="https://www.laregion.fr/" alt="lien du site de la région Occitanie"><img src="./img/partenaire/logooccitanie.webp" style="width:90px;" alt="Logo de la région Occitanie"></a>
+          <a href="https://herault.fr/" alt="lien du département de l'hérault"><img src="./img/partenaire/logoherault.webp" style="width:90px;" alt="Logo du Département de l'Hérault"></a>
+          <a href="https://www.montpellier3m.fr/" alt="lien du site de la metropole de montpellier"><img src="./img/partenaire/logomontpellier.webp" style="width:90px;" alt="Logo de la Ville de Montpellier"></a>
+          <a href="https://www.bpifrance.fr/" alt="lien du site de BPI France"><img src="./img/partenaire/logobpi.webp" style="width:90px;" alt="Logo de BPI France"></a>
+          <a href="https://www.toulouse.fr/" alt="lien du site de la ville de Toulouse"><img src="./img/partenaire/logotoulouse.webp" style="width:90px;" alt="logo ville de Toulouse"></a>
+          <a href="https://librairie.ademe.fr/recherche-et-innovation/3121-zen-e-drive.html" alt="Lien de la librairie Ademe ZEN E-DRIVE"><img src="./img/partenaire/lolozen.webp" style="width:90px;" alt="logo Zen E-DRIVE"></a>
+          <a href="https://www.ines-solaire.org/" alt="lien du site de l'institut INES"><img src="./img/partenaire/logoines.webp" style="width:90px;" alt="Logo de l'Institut Ines"></a>
+          <a href="https://www.cea.fr/" alt="lien du site du CEA"><img src="./img/partenaire/logocea.webp" alt="logo CEA" style="width: 90px;"></a>
+          <a href="https://www.ademe.fr/" alt="lien du site de l'ademe"><img src="./img/partenaire/logoademe (1).webp" alt="logo Ademe" style="width: 90px;"></a>
+        </div>
+      </div>
+      <div class="grid-item4">
+        <div class="footer">
+          <h3 class="blanc">CONTACT</h3>
+          <p class="jaune"><i class="fa-solid fa-location-dot"></i> 2, Rue de l'Innovation</p>
+          <p class="jaune">38000 Grenoble</p>
+          <p class="jaune"><i class="fas fa-phone-alt"></i> +33 7 28 65 98 87</p>
+          <p class="jaune"><i class="fas fa-envelope"></i> contact@sun-power.fr</p>
+        </div>
+      </div>
+    </div>
+    <div class="mentions">
+      <h4>© Sun Power - Tous Droits Réservés – <a href="./mention-legale.html" alt="mention legale">Mentions légales</a> – <a href="./politique-de-confidentialite.html" alt="page de politique de confidentialite">Politique de confidentialité</a></h4>
+    </div>
+  </footer>
+
+</body>
+<!-- * Script pour le menu burger -->
+<script src="./js/buttonBurger.js"></script>
+<!-- * Script pour la map Mika -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+<script src="./js/map.js"></script>
+<script src="./js/formulaire.js"></script>
+</html>

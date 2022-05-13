@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Aquawax Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../Fonts/Aquawax Light Trial.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Aquawax Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../Fonts/Aquawax Medium Trial.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Aquawax Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./../Fonts/Aquawax Black Trial.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Aquawax Black';
+}
+
+h2 {
+  font-family: 'Aquawax Medium';
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Aquawax Light';
+}
+p, ul {
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,135 @@
+section {
+    padding: 3rem 8%;
+  }
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 2rem;
+  }
+  .box {
+      /* background-color:  #F9B105; */
+  }
+  .box-container .box .texte,
+  .image {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .texte .citation p {
+      font-style: italic;
+      border-left: #094f71 solid 6px;
+      margin-left: 25px;
+      padding-left: 5px;
+  }
+  .texte h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 3.2rem;
+    color: #094f71;
+  }
+  
+  .box-container .box .texte h2 {
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+  }
+  .box-container .box .texte p {
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  } .box-container .box .texte {
+    background-color:  #F9B105;
+    
+  }
+
+
+
+
+  .box-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .box-container2 .box2 .texte2,
+  .image2 {
+    height: 30rem;
+    overflow: hidden;
+  }
+  
+  .box-container2 .box2 .image2 .img2 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .box-container2 .box2 .texte2 {
+    margin-bottom: 1rem;
+  }
+  .texte2 h2 {
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color: #094f71;
+  }
+  
+  .box-container2 .box .texte2 h3 {
+    text-align: left;
+    letter-spacing: 1.5px;
+  
+    font-size: 1.8rem;
+    padding-left: 10px;
+  }
+  .box-container2 .box .texte2 h4 {
+    text-align: left;
+    letter-spacing: 1.5px;
+    font-size: 1.8rem;
+    padding-left: 10px;
+  }
+  
+  .box-container2 .box2 .texte2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .box-container2 .box2 .texte2 p {
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    border-left: #F9B105 solid 6px;
+    margin: 20px;
+  }
+
+  /** Mobile first */
+@media screen and (max-width:768px) {
+  .box-container,
+  .box-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 3rem;
+  }
+  h2 {
+    font-size: 2rem !important;
+  }
+}

@@ -1,0 +1,156 @@
+/* FORMULAIRE largeur du form dans le bloc */
+form {
+  width: 70%;
+  padding: 0 50px 0 50px;
+  /* background: #06446e46; */
+  outline-color: none;
+  
+}
+
+/* FORMULAIRE largeur sur l'ecran */
+form div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  min-height: 60px;
+  margin-top: 25px;
+  color: #094F71;
+
+}
+
+/* FORMULAIRE titre des champs */
+form div>label {
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+/* FORMULAIRE hauteur et decalage du place order */
+form div>input {
+  height: 50px;
+  padding-left: 10px;
+
+}
+
+input,
+textarea {
+  outline-color: #F9B105;
+}
+
+/*hauteur de la ligneet deux padding sur le texte */
+form div>textarea {
+  height: 200px;
+  padding: 10px 0px 0px 10px;
+}
+
+form div:last-child {
+  align-items: center;
+  margin-top: 20px;
+}
+
+form div>textarea {
+  height: 65px;
+  padding: 15px 0px 0px 10px;
+}
+
+form div:last-child {
+  align-items: center;
+  margin-top: 15px;
+  background: none;
+}
+
+form .valider {
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 28px;
+  background: #094F71;
+  border: rgba(48, 48, 48, 0.5) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #F9B105;
+  transition: transform 0.5s;
+}
+form .valider:hover {
+  transform: scale(1.05);
+}
+
+.radioButton,
+.typeChoice1,
+.typeChoice2,
+.typeChoice3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 40%;
+  
+}
+.coordonnees {
+  width: 400px;
+  height: 400px;
+  background-color: #094F71;
+  color: #F9B105;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.item-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+.item-container>div {
+  margin-left: 20px;
+}
+.picto img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+
+
+@media screen and (max-width:768px) {
+  .formulaire {
+    width: 100%;
+  }
+  .coordonnees {
+    width: 100%;
+    height: auto;
+  }
+  .item-container {
+    flex-direction: column;
+  }
+  .item-container>div {
+    margin-left: 0px;
+  }
+  .picto img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0px;
+  }
+  form .valider:hover {
+    transform: none;
+  }
+  footer {
+    width:100%;
+  }
+}
+  
