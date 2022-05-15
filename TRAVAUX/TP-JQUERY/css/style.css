@@ -1,0 +1,11 @@
+img {
+  position: absolute;
+  top: 50;
+  left: 500;
+  width: 500px;
+  height: 500px;
+  z-index: 10;
+}
+section {
+  margin: 50px 0;
+}
