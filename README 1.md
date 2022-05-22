@@ -14,4 +14,4 @@ Projets et réalisations de la formation Dévelloppeur Web et Web Mobile promoti
 ## TRAVAUX PRATIQUES
 
 - [TP JQUERY](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/TRAVAUX/TP-JQUERY) - 4 Exercices
-- [TP REACT](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/TRAVAUX/REACT) - 3 Exercices
+- [TP REACT](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/TRAVAUX/TP-REACT) - 3 Exercices
