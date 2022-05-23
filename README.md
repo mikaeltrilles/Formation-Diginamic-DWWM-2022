@@ -12,5 +12,6 @@ Projets et réalisations accomplis durant la formation Dévelloppeur Web et Web 
 
 ## TRAVAUX PRATIQUES
 
+- [TP JAVASCRIPT](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/TRAVAUX/TP-JAVASCRIPT) - 3 Exercices
 - [TP JQUERY](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/TRAVAUX/TP-JQUERY) - 4 Exercices
 - [TP REACT](https://github.com/mikaeltrilles/Formation-Diginamic-DWWM-2022/tree/main/TRAVAUX/TP-REACT) - 3 Exercices
