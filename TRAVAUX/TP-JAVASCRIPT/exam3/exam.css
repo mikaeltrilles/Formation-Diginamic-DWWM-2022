@@ -1,0 +1,21 @@
+section {
+  border: 2px solid black;
+  width: auto;
+  margin: 10px 0 10px 0;
+}
+
+  {
+  background-color: aliceblue;
+}
+
+.btnVal {
+  position: absolute;
+  margin-left: 10%;
+  width: auto;
+}
+
+.btnDel {
+  position: absolute;
+  margin-left: 20%;
+  width: auto;
+}
